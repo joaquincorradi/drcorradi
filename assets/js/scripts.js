@@ -5,3 +5,7 @@ menu.onclick = () => {
   menu.classList.toggle("ri-close-line")
   nav.classList.toggle("open")
 }
+
+function backToTop() {
+  scrollTo(0, 0);
+}

@@ -26,8 +26,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2.0625rem 9%;
-  background-color: transparent;
-  backdrop-filter: blur(0.3rem);
+  background-color: #d9042b;
+  /* background-color: transparent; */
+  /* backdrop-filter: blur(0.3rem); */
 }
 
 @media (max-width: 1535px) {
@@ -143,4 +144,30 @@ button {
   .nav.open {
     right: 0;
   }
+}
+
+.heading-container {
+  margin-top: 8rem;
+}
+
+.name-color {
+  color: #d9042b;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+  padding: 0.6rem 0.9rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.3rem);
+  color: #ebebeb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.55s ease 0s;
+  font-size: 1.2rem;
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.9);
 }
