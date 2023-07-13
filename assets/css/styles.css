@@ -14,6 +14,7 @@ html {
 body {
   color: #ebebeb;
   background-color: #252525;
+  transition: background-color 0.55s ease;
 }
 
 header {
@@ -26,9 +27,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 2.0625rem 9%;
-  background-color: #d9042b;
-  /* background-color: transparent; */
-  /* backdrop-filter: blur(0.3rem); */
+  background-color: transparent;
+  backdrop-filter: blur(0.3rem);
 }
 
 @media (max-width: 1535px) {
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 .rotate-icon:hover {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 button {
@@ -148,10 +148,35 @@ button {
 
 .heading-container {
   margin-top: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  padding: 0rem 15%;
+}
+
+.heading a {
+  color: #ebebeb;
+  border-bottom: 0.125rem solid transparent;
+  transition: all 0.55s ease;
+}
+
+.heading a:hover {
+  border-bottom: 0.125rem solid #ebebeb;
+}
+
+.heading h1 {
+  font-size: 2rem;
 }
 
 .name-color {
   color: #d9042b;
+}
+
+.heading p {
+  margin-top: 1rem;
+  width: 24rem;
+  text-align: justify;
 }
 
 .back-to-top {
@@ -170,4 +195,16 @@ button {
 
 .back-to-top:hover {
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+body.lightmode {
+  transition: background-color 0.55s ease;
+  color: #252525;
+  background-color: #ebebeb;
+}
+
+li.lightmode,
+a.lightmode,
+i.lightmode {
+  color: #252525;
 }
