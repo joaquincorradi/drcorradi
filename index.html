@@ -21,14 +21,20 @@
   <body>
     <header>
       <a href="index.html"
-        ><img src="./assets/img/logo.webp" alt="logo" width="70"
+        ><img id="logo" src="./assets/img/logo.webp" alt="logo" width="70"
       /></a>
 
       <nav>
         <ul class="nav">
-          <a href="#"><li>Inicio</li></a>
-          <a href="#"><li>Sobre mí</li></a>
-          <a href="#"><li>Contacto</li></a>
+          <a href="#">
+            <li>Inicio</li>
+          </a>
+          <a href="#sobre">
+            <li>Sobre mí</li>
+          </a>
+          <a href="#contacto">
+            <li>Contacto</li>
+          </a>
           <article class="icon-nav-full">
             <li>
               <button id="theme-button-menu">
@@ -89,6 +95,78 @@
         />
       </article>
     </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy el Dr. Lucas R. Corradi, un cardiólogo especializado en
+        imagen ubicado en Ushuaia. Con formación en la Universidad Nacional de
+        Córdoba, así como en España y Nueva York, estoy dedicado a proporcionar
+        la mejor atención médica para mantener corazones sanos. Mi enfoque se
+        basa en tecnología avanzada y una atención personalizada. ¡Espero poder
+        ayudarte en tu bienestar cardiovascular!
+      </p>
+    </section>
+
+    <section id="ubicacion" class="ubicacion">
+      <h2>Me podés encontrar en</h2>
+      <article class="maps-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2298.985870878285!2d-68.32847282271332!3d-54.81536427275164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23141e2f9a3b%3A0x7f69c920cbbea8f!2sClinica%20San%20Jorge!5e0!3m2!1ses-419!2sar!4v1689299938609!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2297.9626094629816!2d-68.35086302271242!3d-54.8333416727578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23793fc87fb7%3A0xfc1eddf4cede398!2sCentro%20M%C3%A9dico%20San%20Francisco!5e0!3m2!1ses-419!2sar!4v1689299990775!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </article>
+    </section>
+
+    <section id="contacto" class="contacto"></section>
+
+    <footer>
+      <section>
+        <ul class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/lucas-corradi-7165b872/"
+            target="_blank"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+          <a href="mailto:contacto@drcorradi.com" target="_blank"
+            ><i class="ri-mail-line"></i
+          ></a>
+        </ul>
+      </section>
+
+      <section>
+        <ul class="nav-footer">
+          <a href="#">
+            <li>Inicio</li>
+          </a>
+          <li>·</li>
+          <a href="#sobre">
+            <li>Sobre mí</li>
+          </a>
+          <li>·</li>
+          <a href="#contacto">
+            <li>Contacto</li>
+          </a>
+        </ul>
+      </section>
+
+      <section class="copyright">
+        <i class="ri-copyright-line"></i> <span id="year"></span> · Creado por
+        <a href="https://github.com/joaquincorradi" target="_blank"
+          >Joaquín Corradi</a
+        >
+      </section>
+    </footer>
 
     <section class="back-to-top" onclick="backToTop()">
       <i class="ri-arrow-up-line"></i>

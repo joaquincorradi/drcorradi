@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2.0625rem 9%;
+  padding: 1.5rem 9%;
   background-color: transparent;
   backdrop-filter: blur(0.3rem);
 }
@@ -53,6 +53,11 @@ nav a {
 
 nav a:hover {
   border-bottom: 0.125rem solid #ebebeb;
+}
+
+.nav-active {
+  color: #006DF7;
+  font-weight: 700;
 }
 
 .icon-nav-full {
@@ -179,6 +184,33 @@ button {
   text-align: justify;
 }
 
+.sobre {
+  padding: 0rem 15%;
+  text-align: justify;
+  margin-top: 2rem;
+}
+
+.sobre p, .maps-container {
+  margin-top: 1rem;
+}
+
+.maps-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+iframe {
+  width: 49%;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.ubicacion {
+  padding: 0rem 15%;
+  margin-top: 4rem;
+}
+
 .back-to-top {
   position: fixed;
   bottom: 1.8rem;
@@ -197,6 +229,50 @@ button {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+footer {
+  background-color: #202020;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  bottom: 0rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: #ebebeb;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+
+.nav-footer a {
+  color: #ebebeb;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.copyright a {
+  color: #ebebeb;
+}
+
 body.lightmode {
   transition: background-color 0.55s ease;
   color: #252525;
@@ -207,4 +283,12 @@ li.lightmode,
 a.lightmode,
 i.lightmode {
   color: #252525;
+}
+
+i.ri-arrow-up-line.lightmode {
+  color: #ebebeb;
+}
+
+footer.lightmode {
+  background-color: #dbdbdb;
 }
