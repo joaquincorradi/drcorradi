@@ -105,6 +105,17 @@ button {
   display: none;
 }
 
+.card {
+  margin-top: 8rem;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding: 3rem 8%;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(0.625rem) saturate(100%);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  border-radius: 0.7rem;
+}
+
 @media (max-width: 990px) {
   .menu-icon-container {
     display: block;
@@ -130,15 +141,14 @@ button {
     position: absolute;
     top: 100%;
     right: -100%;
-    width: 18.75rem;
-    height: 40vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 3.125rem 1.25rem;
+    padding: 16rem 1.25rem;
     transition: all 0.55s ease;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(0.3rem);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .nav a {
@@ -147,20 +157,24 @@ button {
     margin: 1rem 0;
   }
 
+  .nav li {
+    font-size: 1.5rem;
+  }
+
   .nav.open {
     right: 0;
   }
-}
 
-.card {
-  margin-top: 8rem;
-  margin-right: 25%;
-  margin-left: 25%;
-  padding: 3rem 8%;
-  background: rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(0.625rem) saturate(100%);
-  border: 1px solid hsla(0, 0%, 100%, 0.05);
-  border-radius: 0.7rem;
+  .maps-container {
+    flex-direction: column;
+    align-content: normal;
+    align-items: center;
+  }
+
+  .card {
+    margin-right: 8%;
+    margin-left: 8%;
+  }
 }
 
 .heading {
@@ -185,7 +199,7 @@ button {
   text-align: center;
 }
 
-.name-color {
+.name-color, .required {
   color: #d9042b;
 }
 
@@ -229,20 +243,75 @@ button {
   margin-top: 1rem;
 }
 
-.maps-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 iframe {
-  width: 49%;
+  width: 100%;
   height: 20rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 .ubicacion {
   margin-top: 2rem;
+}
+
+
+.contacto {
+  margin-top: 2rem;
+}
+
+.contacto .contact-heading {
+  font-size: 24px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 8rem;
+  width: auto;
+  background-color: #ebebeb;
+}
+
+input {
+  background-color: #ebebeb;
+}
+
+.contacto input, .contacto textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 2rem;
+  margin-bottom: 20px;
+}
+
+.contacto input:focus, .contacto textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #056cf2;
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contacto button[type="submit"] {
+  background-color: #056cf2;
+  color: #ebebeb;
+  border: none;
+  border-radius: 2rem;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contacto button[type="submit"]:hover {
+  transform: scale(1.01);
+  transition: transform 0.55s ease-in-out;
 }
 
 .back-to-top {
