@@ -21,12 +21,12 @@
       content="Dr. Lucas Corradi - Médico cardiólogo especialista en imagen cardiovascular"
     />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/img/logo.jpg" />
     <meta
-      property="og:image"
-      content="./assets/img/logo.jpg"
+      property="og:url"
+      content="https://joaquincorradi.github.io/drcorradi/"
     />
-    <meta property="og:url" content="https://joaquincorradi.github.io/drcorradi/" />
-    <meta property="og:locale" content="es_AR">
+    <meta property="og:locale" content="es_AR" />
   </head>
 
   <body>
@@ -131,15 +131,15 @@
     <section id="contacto" class="contacto card">
       <span class="contact-heading">Contactate conmigo</span>
 
-      <form action="">
+      <form action="form.php" method="post">
         <label for="nombre">Nombre<span class="required">*</span></label>
-        <input type="text" id="nombre" required="" />
+        <input type="text" id="nombre" name="nombre" required />
 
         <label for="email">E-mail<span class="required">*</span></label>
-        <input type="email" id="email" name="email" required="" />
+        <input type="email" id="email" name="email" required />
 
         <label for="mensaje">Mensaje<span class="required">*</span></label>
-        <textarea id="message" name="message" required=""></textarea>
+        <textarea id="mensaje" name="mensaje" required></textarea>
 
         <button type="submit">Enviar</button>
       </form>
@@ -153,7 +153,7 @@
             target="_blank"
             ><i class="ri-linkedin-fill"></i
           ></a>
-          <a href="mailto:contacto@drcorradi.com" target="_blank"
+          <a href="mailto:contacto@doctorcorradi.com" target="_blank"
             ><i class="ri-mail-line"></i
           ></a>
         </ul>
