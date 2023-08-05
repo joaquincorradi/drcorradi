@@ -112,7 +112,7 @@
     <section id="contacto" class="contacto card">
       <span class="contact-heading">Contactate conmigo</span>
 
-      <form onsubmit="sendEmail(); reset(); return false" method="post">
+      <form onsubmit="sendEmail(); reset(); return false">
         <label for="nombre">Nombre<span class="required">*</span></label>
         <input type="text" id="nombre" name="nombre" required />
 
@@ -121,6 +121,11 @@
 
         <label for="mensaje">Mensaje<span class="required">*</span></label>
         <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdwOoMnAAAAAFyDpIG37OArCqqFO5RnnpvXWj7e"
+        ></div>
 
         <button type="submit">Enviar</button>
       </form>
@@ -171,5 +176,10 @@
     <script src="./assets/js/scripts.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/form.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?hl=es-419"
+      async
+      defer
+    ></script>
   </body>
 </html>
