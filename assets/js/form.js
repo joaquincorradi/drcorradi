@@ -17,7 +17,7 @@ function sendEmail() {
   } else {
     Email.send({
       SecureToken: "1f0c1ffa-b77d-46c8-b62e-1ff5b656f05f",
-      To: "joakoalternativa2@gmail.com",
+      To: "lucasrcorradi@gmail.com",
       From: "nuevomensajedoctorcorradi@gmail.com",
       Subject: "Nuevo mensaje de doctorcorradi.com.ar",
       Body: body,
