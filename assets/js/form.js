@@ -10,7 +10,8 @@ function sendEmail() {
     document.getElementById("email").value +
     "<br/> Mensaje: " +
     document.getElementById("mensaje").value +
-    "<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>";
+    "<br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>" +
+    "No responder a este mensaje ni presionar en unsuscribe.";
 
   if (response.length === 0) {
     alert("Por favor, verifique que no es un robot.");

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Home - Dr. Lucas Corradi</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
@@ -15,34 +16,171 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <meta
+      property="og:title"
+      content="Dr. Lucas Corradi - Cardiologist specialized in cardiac imaging based in Ushuaia."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/img/logo.jpg" />
+    <meta property="og:url" content="doctorcorradi.com.ar" />
+    <meta property="og:locale" content="en_US" />
   </head>
 
   <body>
     <header>
-      <a href="index.html"
-        ><img src="./assets/img/logo.webp" alt="logo" width="70"
+      <a href="index-US.html"
+        ><img id="logo" src="./assets/img/logo.webp" alt="logo" width="70"
       /></a>
 
       <nav>
-        <ul>
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>About me</li></a>
-          <a href="#"><li>Contact</li></a>
+        <ul class="nav">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#sobre">
+            <li>About me</li>
+          </a>
+          <a href="#contacto">
+            <li>Contact me</li>
+          </a>
         </ul>
       </nav>
 
       <section class="toggle-container">
         <ul>
-          <li><i class="ri-sun-line"></i></li>
+          <li>
+            <button id="theme-button">
+              <i id="lightmode-icon" class="ri-sun-line rotate-icon"></i>
+            </button>
+          </li>
           <li>
             <a href="index.html"><i class="ri-global-line"></i></a>
           </li>
         </ul>
       </section>
-
-      <section class="menu-icon-container">
-        <i class="ri-menu-line menu-icon"></i>
-      </section>
     </header>
+
+    <section class="heading-container card">
+      <article class="heading">
+        <article>
+          <h1>Hi, I'm <span class="name-color">Lucas Corradi</span></h1>
+        </article>
+
+        <article>
+          <p>
+            A healthy heart starts here. I am committed to your well-being at
+            <a href="https://www.sanatoriosanjorge.com.ar/" target="_blank"
+              >San Jorge Clinic</a
+            >
+            in Ushuaia.
+          </p>
+        </article>
+
+        <article class="contact-button">
+          <a href="#contacto">Contact me</a>
+        </article>
+      </article>
+    </section>
+
+    <section id="sobre" class="sobre card">
+      <h2 class="name-color">About me</h2>
+      <p>
+        Hello! I am Dr. Lucas R. Corradi, a cardiologist specialized in
+        cardiovascular imaging located in Ushuaia. With training from the
+        National University of Córdoba, as well as in Spain and the United
+        States, I am dedicated to providing the best medical care to maintain
+        healthy hearts. My approach is based on advanced technology and
+        personalized attention. I look forward to helping you with your
+        cardiovascular well-being!
+      </p>
+    </section>
+
+    <section id="ubicacion" class="ubicacion card">
+      <h2>Where to find me</h2>
+      <article class="maps-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2298.985870878285!2d-68.32847282271332!3d-54.81536427275164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c23141e2f9a3b%3A0x7f69c920cbbea8f!2sClinica%20San%20Jorge!5e0!3m2!1ses-419!2sar!4v1689299938609!5m2!1ses-419!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </article>
+    </section>
+
+    <section id="contacto" class="contacto card">
+      <span class="contact-heading">Get in touch</span>
+
+      <form onsubmit="sendEmail(); reset(); return false">
+        <label for="nombre">Your name<span class="required">*</span></label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Your e-mail<span class="required">*</span></label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje"
+          >Leave a message<span class="required">*</span></label
+        >
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdwOoMnAAAAAFyDpIG37OArCqqFO5RnnpvXWj7e"
+        ></div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <section>
+        <ul class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/lucas-corradi-7165b872/"
+            target="_blank"
+            ><i class="ri-linkedin-fill"></i
+          ></a>
+          <a href="mailto:nuevomensajedoctorcorradi@gmail.com" target="_blank"
+            ><i class="ri-mail-line"></i
+          ></a>
+        </ul>
+      </section>
+
+      <section>
+        <ul class="nav-footer">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <li>·</li>
+          <a href="#sobre">
+            <li>About me</li>
+          </a>
+          <li>·</li>
+          <a href="#contacto">
+            <li>Contact me</li>
+          </a>
+        </ul>
+      </section>
+
+      <section class="copyright">
+        <i class="ri-copyright-line"></i> <span id="year"></span> · Created by
+        <a href="https://github.com/joaquincorradi" target="_blank"
+          >Joaquín Corradi</a
+        >
+      </section>
+    </footer>
+
+    <section class="back-to-top" onclick="backToTop()">
+      <i class="ri-arrow-up-line"></i>
+    </section>
+
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?hl=en"
+      async
+      defer
+    ></script>
   </body>
 </html>
