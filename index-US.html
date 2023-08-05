@@ -25,9 +25,6 @@
     <meta property="og:url" content="doctorcorradi.com.ar" />
     <meta property="og:locale" content="en_US" />
 
-    <script src="./assets/js/scripts.js"></script>
-    <script src="./assets/js/form.js"></script>
-    <script src="./assets/js/scrollreveal.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <script
@@ -184,5 +181,21 @@
     <section class="back-to-top" onclick="backToTop()">
       <i class="ri-arrow-up-line"></i>
     </section>
+
+    <script>
+      const sr = ScrollReveal({
+        duration: 1500,
+        delay: 200,
+        reset: true,
+      });
+
+      sr.reveal(".heading-container");
+      sr.reveal(".sobre");
+      sr.reveal(".ubicacion");
+      sr.reveal(".contacto");
+    </script>
+
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>
