@@ -1,11 +1,11 @@
-// Include a menu icon on smaller devices
-let menu = document.querySelector(".menu-icon");
-let nav = document.querySelector(".nav");
+// // Include a menu icon on smaller devices
+// let menu = document.querySelector(".menu-icon");
+// let nav = document.querySelector(".nav");
 
-menu.onclick = () => {
-  menu.classList.toggle("ri-close-line");
-  nav.classList.toggle("open");
-};
+// menu.onclick = () => {
+//   menu.classList.toggle("ri-close-line");
+//   nav.classList.toggle("open");
+// };
 
 // Scroll back to top when button is clicked
 function backToTop() {
@@ -68,5 +68,3 @@ themeButton.addEventListener("click", (e) => {
 // Current year on footer
 let year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();
-
-// Navbar behavior
