@@ -1,12 +1,3 @@
-// // Include a menu icon on smaller devices
-// let menu = document.querySelector(".menu-icon");
-// let nav = document.querySelector(".nav");
-
-// menu.onclick = () => {
-//   menu.classList.toggle("ri-close-line");
-//   nav.classList.toggle("open");
-// };
-
 // Scroll back to top when button is clicked
 function backToTop() {
   scrollTo(0, 0);
@@ -24,7 +15,7 @@ let footer = document.querySelector("footer");
 
 themeButton.addEventListener("click", (e) => {
   body.classList.toggle("lightmode");
-  footer.classList.toggle("lightmode")
+  footer.classList.toggle("lightmode");
 
   if (body.classList.contains("lightmode")) {
     for (var i = 0; i < li.length; i++) {
