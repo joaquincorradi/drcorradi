@@ -134,7 +134,8 @@ button {
   text-align: center;
 }
 
-.name-color, .required {
+.name-color,
+.required {
   color: #d9042b;
 }
 
@@ -166,6 +167,23 @@ button {
 .contact-button a:hover {
   border-bottom: 0;
 } */
+
+/* Center one button */
+.btn-container-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container-2 a {
+  color: #ebebeb;
+  border-bottom: 0.125rem solid transparent;
+  transition: all 0.55s ease;
+}
+
+.btn-container-2 a:hover {
+  border-bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
 
 .btn-container {
   margin-top: 2.75rem;
@@ -245,14 +263,16 @@ input {
   background-color: #ebebeb;
 }
 
-.contacto input, .contacto textarea {
+.contacto input,
+.contacto textarea {
   padding: 10px;
   border: none;
   border-radius: 2rem;
   margin-bottom: 20px;
 }
 
-.contacto input:focus, .contacto textarea:focus {
+.contacto input:focus,
+.contacto textarea:focus {
   outline: none;
   box-shadow: 0 0 5px #056cf2;
   transform: scale(1.01);
